@@ -1,0 +1,11 @@
+@import "./reset";
+@import "./variables";
+
+body {
+  font-family: $Kumbh-Sans;
+  font-size: 14px;
+  font-weight: map-get($font-weight, regular);
+}
+main {
+  background-color: yellow;
+}
