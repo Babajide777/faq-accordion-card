@@ -15,4 +15,17 @@ body {
 main {
   background-color: yellow;
 }
+
+.accordion-question-body {
+  display: none;
+}
+
+.show-body {
+  display: block;
+}
+
+.show-body span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 /*# sourceMappingURL=main.css.map */

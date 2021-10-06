@@ -9,3 +9,15 @@ body {
 main {
   background-color: yellow;
 }
+
+.accordion-question-body{
+  display: none;
+}
+
+.show-body{
+  display: block;
+
+  span{
+    transform:rotate(180deg);
+  }
+}
