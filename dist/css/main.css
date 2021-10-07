@@ -12,8 +12,8 @@ body {
   font-weight: 400;
 }
 
-main {
-  background-color: yellow;
+.accordion-questions button {
+  border: none;
 }
 
 .accordion-question-body {

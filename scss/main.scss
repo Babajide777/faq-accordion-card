@@ -6,18 +6,21 @@ body {
   font-size: 14px;
   font-weight: map-get($font-weight, regular);
 }
-main {
-  background-color: yellow;
+
+.accordion-questions {
+  button {
+    border: none;
+  }
 }
 
-.accordion-question-body{
+.accordion-question-body {
   display: none;
 }
 
-.show-body{
+.show-body {
   display: block;
 
-  span{
-    transform:rotate(180deg);
+  span {
+    transform: rotate(180deg);
   }
 }
