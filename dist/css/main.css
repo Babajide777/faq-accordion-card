@@ -12,8 +12,104 @@ body {
   font-weight: 400;
 }
 
-.accordion-questions button {
+main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entire-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: aqua;
+  width: 300px;
+  max-width: 90%;
+  border-radius: 20px;
+  height: 450px;
+}
+
+.entire-card .accordion-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 80%;
+  margin-top: -6rem;
+}
+
+.entire-card .accordion-svg img:nth-of-type(1),
+.entire-card .accordion-svg img:nth-of-type(2),
+.entire-card .accordion-svg img:nth-of-type(3) {
+  display: none;
+}
+
+.entire-card .accordion-svg img:nth-of-type(4), .entire-card .accordion-svg img:nth-of-type(5) {
+  height: 100%;
+  width: 100%;
+}
+
+.entire-card .accordion-svg img:nth-of-type(5) {
+  margin-top: -5.5rem;
+  margin-left: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.accordion-content {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2rem;
+  height: 100%;
+}
+
+.accordion-content .accordion-header {
+  text-align: center;
+}
+
+.accordion-content .accordion-header h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.accordion-content .accordion-questions button {
   border: none;
+}
+
+.accordion-content .accordion-questions .accordion-question-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .accordion-question-body {

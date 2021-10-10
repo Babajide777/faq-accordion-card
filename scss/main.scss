@@ -7,9 +7,72 @@ body {
   font-weight: map-get($font-weight, regular);
 }
 
-.accordion-questions {
-  button {
-    border: none;
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.entire-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: aqua;
+  width: 300px;
+  max-width: 90%;
+  border-radius: 20px;
+  height: 450px;
+
+  .accordion-svg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: -6rem;
+    img:nth-of-type(1),
+    img:nth-of-type(2),
+    img:nth-of-type(3) {
+      display: none;
+    }
+
+    img:nth-of-type(4) {
+      height: 100%;
+      width: 100%;
+    }
+
+    img:nth-of-type(5) {
+      margin-top: -5.5rem;
+      margin-left: 1.2rem;
+      align-self: center;
+      @extend img:nth-of-type(4);
+    }
+  }
+}
+
+.accordion-content {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  height: 100%;
+  .accordion-header {
+    text-align: center;
+    h2 {
+      font-weight: map-get($font-weight, bold);
+      font-size: 2rem;
+    }
+  }
+
+  .accordion-questions {
+    button {
+      border: none;
+    }
+
+    .accordion-question-header {
+      display: flex;
+    }
   }
 }
 
