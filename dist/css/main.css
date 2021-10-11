@@ -154,9 +154,13 @@ main {
   display: block;
 }
 
-.show-body span {
+.rotate-arrow button {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.bolden-para {
+  font-weight: bold;
 }
 
 @media screen and (min-width: 375px) {

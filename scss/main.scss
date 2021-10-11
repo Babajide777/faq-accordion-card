@@ -103,10 +103,16 @@ main {
 
 .show-body {
   display: block;
+}
 
-  span {
+.rotate-arrow {
+  button {
     transform: rotate(180deg);
   }
+}
+
+.bolden-para {
+  font-weight: bold;
 }
 
 @media screen and (min-width: 375px) {
