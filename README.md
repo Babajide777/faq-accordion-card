@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Babajide777/faq-accordion-card)
-- Live Site URL: [Add live site URL here](https://babajide777.github.io/faq-accordion-card/)
+- Live Site URL: [Add live site URL here](https://babajide-faq-accordion-card.netlify.app/)
 
 ### Built with
 
