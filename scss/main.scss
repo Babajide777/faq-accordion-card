@@ -5,6 +5,8 @@ body {
   font-family: $Kumbh-Sans;
   font-size: 14px;
   font-weight: map-get($font-weight, regular);
+  background: linear-gradient($Soft-violet, $Soft-blue);
+  margin-top: 3rem;
 }
 
 main {
@@ -19,7 +21,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: aqua;
+  background-color: white;
   width: 300px;
   max-width: 90%;
   border-radius: 20px;
@@ -30,7 +32,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     width: 80%;
-    margin-top: -6rem;
+    margin-top: -6.2rem;
     img:nth-of-type(1),
     img:nth-of-type(2),
     img:nth-of-type(3) {
@@ -43,7 +45,7 @@ main {
     }
 
     img:nth-of-type(5) {
-      margin-top: -5.5rem;
+      margin-top: -5.6rem;
       margin-left: 1.2rem;
       align-self: center;
       @extend img:nth-of-type(4);
@@ -52,26 +54,45 @@ main {
 }
 
 .accordion-content {
-  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
   height: 100%;
   .accordion-header {
     text-align: center;
     h2 {
       font-weight: map-get($font-weight, bold);
       font-size: 2rem;
+      color: $Very-dark-grayish-blue;
     }
   }
 
   .accordion-questions {
-    button {
-      border: none;
-    }
+    margin-top: -1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
-    .accordion-question-header {
-      display: flex;
+    .accordion-question {
+      border-bottom: 0.05rem solid $Light-grayish-blue;
+      padding-bottom: 0.8rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+
+      p {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        color: $Dark-grayish-blue;
+      }
+      .accordion-question-header {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          border: none;
+          background-color: inherit;
+        }
+      }
     }
   }
 }
@@ -85,5 +106,69 @@ main {
 
   span {
     transform: rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    margin-top: 0;
+  }
+  .entire-card {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+    height: 400px;
+    margin: 0;
+
+    .accordion-svg {
+      flex-direction: row;
+      width: 60%;
+      margin-top: 0;
+
+      img:nth-of-type(1),
+      img:nth-of-type(2),
+      img:nth-of-type(3) {
+        display: block;
+        width: 100%;
+      }
+
+      img:nth-of-type(1) {
+        margin-left: -6rem;
+        margin-top: 5.2rem;
+        z-index: 2;
+      }
+
+      img:nth-of-type(2) {
+        margin-left: -9rem;
+        margin-top: 1rem;
+      }
+
+      img:nth-of-type(3) {
+        margin-left: -16rem;
+        margin-top: 1rem;
+      }
+
+      img:nth-of-type(4),
+      img:nth-of-type(5) {
+        display: none;
+      }
+    }
+
+    .accordion-content {
+      height: 80%;
+      width: 80%;
+      padding-right: 3rem;
+      padding-left: 3rem;
+
+      .accordion-header {
+        text-align: left;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+      }
+
+      .accordion-questions {
+        height: 80%;
+      }
+    }
   }
 }

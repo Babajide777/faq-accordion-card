@@ -10,6 +10,9 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  margin-top: 3rem;
 }
 
 main {
@@ -39,7 +42,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: aqua;
+  background-color: white;
   width: 300px;
   max-width: 90%;
   border-radius: 20px;
@@ -58,7 +61,7 @@ main {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 80%;
-  margin-top: -6rem;
+  margin-top: -6.2rem;
 }
 
 .entire-card .accordion-svg img:nth-of-type(1),
@@ -73,7 +76,7 @@ main {
 }
 
 .entire-card .accordion-svg img:nth-of-type(5) {
-  margin-top: -5.5rem;
+  margin-top: -5.6rem;
   margin-left: 1.2rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -81,7 +84,6 @@ main {
 }
 
 .accordion-content {
-  margin-top: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +91,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 2rem;
   height: 100%;
 }
 
@@ -100,16 +101,49 @@ main {
 .accordion-content .accordion-header h2 {
   font-weight: 700;
   font-size: 2rem;
+  color: #4a4b5e;
 }
 
-.accordion-content .accordion-questions button {
-  border: none;
-}
-
-.accordion-content .accordion-questions .accordion-question-header {
+.accordion-content .accordion-questions {
+  margin-top: -1rem;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.accordion-content .accordion-questions .accordion-question {
+  border-bottom: 0.05rem solid #e7e7e9;
+  padding-bottom: 0.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.accordion-content .accordion-questions .accordion-question p {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  color: #787887;
+}
+
+.accordion-content .accordion-questions .accordion-question .accordion-question-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.accordion-content .accordion-questions .accordion-question .accordion-question-header button {
+  border: none;
+  background-color: inherit;
 }
 
 .accordion-question-body {
@@ -123,5 +157,68 @@ main {
 .show-body span {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    margin-top: 0;
+  }
+  .entire-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 800px;
+    height: 400px;
+    margin: 0;
+  }
+  .entire-card .accordion-svg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 60%;
+    margin-top: 0;
+  }
+  .entire-card .accordion-svg img:nth-of-type(1),
+  .entire-card .accordion-svg img:nth-of-type(2),
+  .entire-card .accordion-svg img:nth-of-type(3) {
+    display: block;
+    width: 100%;
+  }
+  .entire-card .accordion-svg img:nth-of-type(1) {
+    margin-left: -6rem;
+    margin-top: 5.2rem;
+    z-index: 2;
+  }
+  .entire-card .accordion-svg img:nth-of-type(2) {
+    margin-left: -9rem;
+    margin-top: 1rem;
+  }
+  .entire-card .accordion-svg img:nth-of-type(3) {
+    margin-left: -16rem;
+    margin-top: 1rem;
+  }
+  .entire-card .accordion-svg img:nth-of-type(4), .entire-card .accordion-svg img:nth-of-type(5),
+  .entire-card .accordion-svg img:nth-of-type(5) {
+    display: none;
+  }
+  .entire-card .accordion-content {
+    height: 80%;
+    width: 80%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .entire-card .accordion-content .accordion-header {
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  .entire-card .accordion-content .accordion-questions {
+    height: 80%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
