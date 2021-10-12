@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Web version](./images/web.png)
+![Web version](./images/web.PNG)
 ![Mobile version](./images/mobile.PNG)
 
 ### Links
